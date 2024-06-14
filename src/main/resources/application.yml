@@ -1,0 +1,18 @@
+server:
+  port: 8090
+spring:
+  jackson:
+    serialization:
+      fail-on-empty-beans: false
+  datasource:
+    password: Elian123#
+    url: jdbc:mysql://localhost:3306/dbLoja?createDatabaseIfNotExist=true
+    username: root
+  jpa:
+    defer-datasource-initialization: true
+    generate-ddl: true
+    hibernate:
+      ddl-auto: update
+  sql:
+    init:
+      mode: always
